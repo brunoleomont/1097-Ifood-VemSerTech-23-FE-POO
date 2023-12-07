@@ -1,15 +1,16 @@
 export class Produtos {
   #id
-  constructor(id, nome, preco) {
-    this.#id = id;
+  constructor(nome, preco, quantidade) {
     this.nome = nome;
     this.preco = preco;
-  }
-  get id() {
-    return this.#id;
+    this.quantidade = quantidade;
   }
 
-  set id(id) {
-    this.#id = id;
+  get id() {
+    return this.#id
+  }
+
+  set id(novoId) {
+    this.#id = novoId
   }
 }
