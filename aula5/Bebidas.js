@@ -1,8 +1,8 @@
-import { Produtos } from "./Produtos";
+import { Produtos } from "./Produtos.js";
 
 export class Bebidas extends Produtos {
-    constructor(categoria, embalagem){
-        super(id, nome, preco)
+    constructor(nome, preco, quantidade, categoria, embalagem){
+        super(nome, preco, quantidade)
         this.categoria = categoria
         this.embalagem = embalagem;
     }

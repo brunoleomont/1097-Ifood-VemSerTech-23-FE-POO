@@ -1,16 +1,16 @@
-import { Produtos } from "./Produtos";
+import { Produtos } from "./Produtos.js";
 
 export class Estoque {
     static #produtos = [];
     static ids = 0;
     constructor() { }
-    static cadastrarProdutos(nome, qtd, preco) {
-        const p = new Produtos(
-            nome,
-            qtd,
-            preco);
-        p.id = ++Estoque.ids;
-        Estoque.produtos.push(p);
+    static cadastrarProdutos(produto) {
+        // const p = new Produtos(
+        //     produto.nome,
+        //     produto.qtd,
+        //     produto.preco);
+        // p.id = ++Estoque.ids;
+        Estoque.produtos.push(produto);
     }
     static deletarProduto(produtoId) {
         this.#produtos = Estoque.produtos.filter(

@@ -5,8 +5,8 @@ export class Lanches extends Produtos {
   #ingredientes
   #categoria
 
-  constructor(id, nome, preco, ingredientes, categoria) {
-    super(id, nome, preco)
+  constructor(nome, preco, quantidade, ingredientes, categoria) {
+    super(nome, preco, quantidade)
     this.#ingredientes = ingredientes;
     this.#categoria = categoria;
   }
